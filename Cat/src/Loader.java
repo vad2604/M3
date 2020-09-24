@@ -11,15 +11,13 @@ public class Loader
         Cat ryzhik = new Cat();
         Cat bantik = new Cat();
 
-        System.out.println("CAT".equals(rrr.CAT));
-
-
         System.out.println(defaultCat.getStatus());
         System.out.println("Barsik weight " + barsik.getWeight());
         System.out.println("Kuzya weight " + kuzya.getWeight());
         System.out.println("Murka weight " + murka.getWeight());
         System.out.println("Ryzhik weight " + ryzhik.getWeight());
         System.out.println("Bantik weight " + bantik.getWeight());
+
         overFeedCat(barsik);
         meowCat(kuzya);
 
@@ -41,7 +39,6 @@ public class Loader
             System.out.println(bantikClone.getColor());
         } catch (CloneNotSupportedException e) {
             System.out.println("Exception occured during cat cloning!");
-            System.out.println("CAT".equals(rrr.CAT));
         }
     }
 
@@ -61,9 +58,5 @@ public class Loader
              cat.feed(100.0);
          }
         System.out.println("Cat is exploded ");
-    }
-
-    enum rrr {
-        CAT;
     }
 }
